@@ -2,7 +2,7 @@
 
 **Materia:** Programación III  
 **Grupo:** Grupo DevGirls
-**Integrantes:** Nombre1, Nombre2, Nombre3  
+**Integrantes:** Ochoa Candela Maribel, Hernandez Dominguez Tatiana Ayelen, Sibilia Maria Giuliana  
 **Fecha:** Junio 2026  
 
 ---
