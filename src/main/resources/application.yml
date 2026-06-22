@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: smart-inventory
+
+# Swagger / OpenAPI
+springdoc:
+  api-docs:
+    path: /api-docs
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+
+# Umbrales de alerta de stock
+inventario:
+  stock:
+    minimo: 10
+    critico: 3
