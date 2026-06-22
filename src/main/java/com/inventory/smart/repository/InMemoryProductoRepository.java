@@ -19,6 +19,11 @@ public class InMemoryProductoRepository
         extends GenericInMemoryRepository<Producto, Long>
         implements ProductoRepository {
 
+            /**
+ * Constructor por defecto.
+ */
+public InMemoryProductoRepository() {}
+
     /**
      * {@inheritDoc}
      *

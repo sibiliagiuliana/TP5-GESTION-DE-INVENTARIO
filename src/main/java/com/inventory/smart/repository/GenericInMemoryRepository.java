@@ -26,6 +26,11 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 public abstract class GenericInMemoryRepository<T, ID> implements IGenericRepository<T, ID> {
 
+/**
+ * Constructor por defecto.
+ */
+public GenericInMemoryRepository() {}
+
     /**
      * Almacenamiento en memoria de las entidades.
      * ConcurrentHashMap es thread-safe sin bloquear todo el mapa.

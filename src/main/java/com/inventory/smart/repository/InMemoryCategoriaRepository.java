@@ -18,6 +18,11 @@ public class InMemoryCategoriaRepository
         extends GenericInMemoryRepository<Categoria, Long>
         implements CategoriaRepository {
 
+/**
+ * Constructor por defecto.
+ */
+public InMemoryCategoriaRepository() {}
+
     /**
      * {@inheritDoc}
      *

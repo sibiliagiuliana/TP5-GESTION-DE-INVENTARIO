@@ -15,6 +15,11 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 @EnableConfigurationProperties(StockConfig.class)
 public class SmartInventoryApplication {
 
+/**
+ * Constructor por defecto.
+ */
+public SmartInventoryApplication() {}
+
     /**
      * Punto de entrada de la aplicación.
      *

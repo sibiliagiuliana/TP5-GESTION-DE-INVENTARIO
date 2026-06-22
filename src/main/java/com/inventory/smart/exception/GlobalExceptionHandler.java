@@ -23,6 +23,11 @@ import java.util.Map;
 public class GlobalExceptionHandler {
 
     /**
+ * Constructor por defecto de GlobalExceptionHandler.
+ */
+public GlobalExceptionHandler() {}
+
+    /**
      * Maneja recursos no encontrados → HTTP 404.
      *
      * @param ex excepción capturada
@@ -69,15 +74,15 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(body);
     }
 
-    /**
-     * Maneja errores de validación de campos → HTTP 400.
-     *
-     * <p>Se activa cuando un campo anotado con @NotBlank, @NotNull,
-     * @Positive, etc. no cumple su restricción.</p>
-     *
-     * @param ex excepción capturada
-     * @return respuesta con código 400 y lista de errores por campo
-     */
+   /**
+ * Maneja errores de validación de campos → HTTP 400.
+ *
+ * <p>Se activa cuando un campo anotado con Valid, NotBlank, NotNull
+ * o Positive no cumple su restriccion.</p>
+ *
+ * @param ex excepción capturada
+ * @return respuesta con código 400 y lista de errores por campo
+ */
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<Map<String, Object>> handleValidation(MethodArgumentNotValidException ex) {
         Map<String, Object> body = new HashMap<>();

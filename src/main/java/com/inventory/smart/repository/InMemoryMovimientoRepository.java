@@ -18,6 +18,10 @@ import java.util.List;
 public class InMemoryMovimientoRepository 
         extends GenericInMemoryRepository<MovimientoInventario, Long>
         implements MovimientoRepository {
+/**
+ * Constructor por defecto.
+ */
+public InMemoryMovimientoRepository() {}
 
     /**
      * {@inheritDoc}
